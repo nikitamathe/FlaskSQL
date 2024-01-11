@@ -3,40 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Sample Page</title>
-    <style>
-        /* CSS styles */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #1f1f1f 3px solid;
-        }
-        
-        header h1 {
-            padding: 5px 0;
-            text-align: center;
-        }
-        
-        /* Add more styles as needed */
-        
-        .content {
-            padding: 20px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+   
 </head>
 <body>
     <header>
@@ -47,7 +16,7 @@
     
     <div class="container">
         <div class="content">
-            <h2>Main Content Area</h2>
+            <h2>Main Content </h2>
             <p>This is a sample page. You can do what is needed.</p>
         </div>
     </div>
